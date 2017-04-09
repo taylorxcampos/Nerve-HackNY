@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nerve</string>
+    <string-array name="servicess_array">
+        <item>HairCut</item>
+        <item>Free Wifi</item>
+        <item>Pet Grooming</item>
+        <item>Sheltering</item>
+        <item>Transportation</item>
+    </string-array>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_homeless_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.taylorcampos.hacknyfinal.HomelessMainActivity"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+
+    <TextView
+        android:text="nerve."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNerve"
+        android:textSize="70sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/colorPrimary"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtProvide"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="I would like help with..."
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtProvide"
+        android:textSize="30sp"
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:textAlignment="center"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomelessJobs"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnHomelessJobs" />
+    <Button
+        android:text="Food"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomelessFood"
+        android:onClick="companyFoodHomeless"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/btnHomelessService"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="157dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnHomelessService" />
+
+    <Button
+        android:text="Services"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:id="@+id/btnHomelessService"
+        android:onClick="companyServicesHomeless"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomelessFood"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="Jobs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHomelessJobs"
+        android:onClick="companyJobHomeless"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnHomelessService"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

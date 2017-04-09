@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taylorcampos.hacknyfinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CompanyMainActivity"></activity>
+        <activity android:name=".CompanyJobActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taylorcampos.hacknyfinal.CompanyMainActivity" />
+        </activity>
+        <activity android:name=".CompanyFoodActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taylorcampos.hacknyfinal.CompanyMainActivity" />
+        </activity>
+        <activity android:name=".CompanyServiceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taylorcampos.hacknyfinal.CompanyMainActivity" />
+        </activity>
+        <activity android:name=".HomelessMainActivity"/>
+
+
+        <activity android:name=".HomelessJobActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taylorcampos.hacknyfinal.HomelessMainActivity" />
+        </activity>
+        <activity android:name=".HomelessServiceActivity" >
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.taylorcampos.hacknyfinal.HomelessMainActivity" />
+    </activity>
+        <activity android:name=".HomelessFoodActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taylorcampos.hacknyfinal.HomelessMainActivity" />
+        </activity>
+        <activity android:name=".HomePageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

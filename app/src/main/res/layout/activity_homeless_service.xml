@@ -1,0 +1,43 @@
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/common_google_signin_btn_text_dark_default">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.taylorcampos.hacknyfinal.HomelessServiceActivity"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="nerve."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNerve"
+            android:textSize="70sp"
+            android:fontFamily="cursive"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="listed services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtServ"
+            android:textAlignment="center" />
+
+        <ListView android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:drawSelectorOnTop="false"
+            android:layout_height="480sp" />
+
+
+    </LinearLayout>
+</ScrollView>
